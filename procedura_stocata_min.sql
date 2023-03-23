@@ -1,0 +1,5 @@
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `pret_min_produs`(OUT `MINIM` DOUBLE)
+SELECT DISTINCT MIN(PRET) INTO minim
+FROM produs$$
+DELIMITER;
